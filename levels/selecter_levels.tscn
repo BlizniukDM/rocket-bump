@@ -1,0 +1,88 @@
+[gd_scene load_steps=4 format=3 uid="uid://clje207nh7i8c"]
+
+[ext_resource type="Script" path="res://levels/selecter_levels.gd" id="1_f81r2"]
+[ext_resource type="Texture2D" uid="uid://dgjty1pmjigb2" path="res://background_01.png" id="1_ulysr"]
+[ext_resource type="Texture2D" uid="uid://xlhtyublc8ek" path="res://background_02.png" id="2_yerl8"]
+
+[node name="Selecter_levels" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_f81r2")
+
+[node name="Background1" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -91.0
+offset_top = -51.0
+offset_right = 91.0
+offset_bottom = 51.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_ulysr")
+flip_h = true
+
+[node name="Background2" type="TextureRect" parent="Background1"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_yerl8")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Level_1" type="Button" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "LEVEL 1"
+
+[node name="Level_2" type="Button" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "LEVEL 2"
+
+[node name="Level_3" type="Button" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "LEVEL 3"
+
+[node name="Level_4" type="Button" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "LEVEL 4"
+
+[node name="Level_5" type="Button" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "LEVEL 5"
+
+[node name="Level_6" type="Button" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "LEVEL 6"
+
+[node name="Level_7" type="Button" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "LEVEL 7"
+
+[connection signal="pressed" from="HBoxContainer/Level_1" to="." method="_on_level_1_pressed"]
+[connection signal="pressed" from="HBoxContainer/Level_2" to="." method="_on_level_2_pressed"]
+[connection signal="pressed" from="HBoxContainer/Level_3" to="." method="_on_level_3_pressed"]
+[connection signal="pressed" from="HBoxContainer/Level_4" to="." method="_on_level_4_pressed"]
+[connection signal="pressed" from="HBoxContainer/Level_5" to="." method="_on_level_5_pressed"]
+[connection signal="pressed" from="HBoxContainer/Level_6" to="." method="_on_level_6_pressed"]
+[connection signal="pressed" from="HBoxContainer/Level_7" to="." method="_on_level_7_pressed"]

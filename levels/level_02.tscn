@@ -1,0 +1,45 @@
+[gd_scene load_steps=7 format=3 uid="uid://dnqekt84b0cmt"]
+
+[ext_resource type="Script" path="res://levels/LandingPad.gd" id="1_8mp55"]
+[ext_resource type="PackedScene" uid="uid://bxw7onnebqfur" path="res://levels/background.tscn" id="1_dlq0y"]
+[ext_resource type="PackedScene" uid="uid://d3r3w7iunguel" path="res://player/player.tscn" id="2_t2b8v"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_k5btx"]
+albedo_color = Color(1, 0.0352941, 0.972549, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_p7bfj"]
+albedo_color = Color(0.337255, 0.662745, 0.788235, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vmnuh"]
+albedo_color = Color(0.0862745, 0.729412, 0.239216, 1)
+
+[node name="Level" type="Node3D"]
+
+[node name="Floor" parent="." instance=ExtResource("1_dlq0y")]
+
+[node name="Obstacle" type="CSGBox3D" parent="." groups=["Hazard"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.08165e-12, 2.00962, 2.08165e-12)
+use_collision = true
+size = Vector3(3, 2, 3)
+material = SubResource("StandardMaterial3D_k5btx")
+
+[node name="LaunchPad" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.5, 0.2, 2.08165e-12)
+use_collision = true
+size = Vector3(2, 0.4, 2)
+material = SubResource("StandardMaterial3D_p7bfj")
+
+[node name="LandingPad" type="CSGBox3D" parent="." groups=["Win"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.5, 0.2, 2.08165e-12)
+use_collision = true
+size = Vector3(2, 0.4, 2)
+material = SubResource("StandardMaterial3D_vmnuh")
+script = ExtResource("1_8mp55")
+file_path = "res://levels/level_03.tscn"
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, -4.21304e-16, 3.41165e-16, 3.41165e-16, 0.978148, 0.207912, -4.21304e-16, -0.207912, 0.978148, 2.08165e-12, 4.88, 7.21)
+top_level = true
+
+[node name="Player" parent="." instance=ExtResource("2_t2b8v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.5, 1.4, 2.08165e-12)
