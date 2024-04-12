@@ -1,8 +1,8 @@
 [gd_scene load_steps=4 format=3 uid="uid://clje207nh7i8c"]
 
 [ext_resource type="Script" path="res://levels/selecter_levels.gd" id="1_f81r2"]
-[ext_resource type="Texture2D" uid="uid://dgjty1pmjigb2" path="res://background_01.png" id="1_ulysr"]
-[ext_resource type="Texture2D" uid="uid://xlhtyublc8ek" path="res://background_02.png" id="2_yerl8"]
+[ext_resource type="Texture2D" uid="uid://dgjty1pmjigb2" path="res://icons/background_01.png" id="1_ulysr"]
+[ext_resource type="Texture2D" uid="uid://xlhtyublc8ek" path="res://icons/background_02.png" id="2_yerl8"]
 
 [node name="Selecter_levels" type="Control"]
 layout_mode = 3

@@ -1,9 +1,9 @@
 [gd_scene load_steps=5 format=3 uid="uid://xkqclguvn2ae"]
 
 [ext_resource type="Script" path="res://levels/menu.gd" id="1_6f46b"]
-[ext_resource type="Theme" uid="uid://dgn8di0o6fpt1" path="res://Button_color.tres" id="1_dxds7"]
-[ext_resource type="Texture2D" uid="uid://dgjty1pmjigb2" path="res://background_01.png" id="1_hqju7"]
-[ext_resource type="Texture2D" uid="uid://xlhtyublc8ek" path="res://background_02.png" id="2_j1g31"]
+[ext_resource type="Theme" uid="uid://dgn8di0o6fpt1" path="res://icons/Button_color.tres" id="1_dxds7"]
+[ext_resource type="Texture2D" uid="uid://dgjty1pmjigb2" path="res://icons/background_01.png" id="1_hqju7"]
+[ext_resource type="Texture2D" uid="uid://xlhtyublc8ek" path="res://icons/background_02.png" id="2_j1g31"]
 
 [node name="Menu" type="Control"]
 layout_mode = 3

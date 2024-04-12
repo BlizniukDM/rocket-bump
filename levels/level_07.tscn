@@ -3,7 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://bxw7onnebqfur" path="res://levels/background.tscn" id="1_dcw6v"]
 [ext_resource type="Script" path="res://levels/LandingPad.gd" id="2_72lgw"]
 [ext_resource type="PackedScene" uid="uid://d3r3w7iunguel" path="res://player/player.tscn" id="3_ht6i0"]
-[ext_resource type="PackedScene" uid="uid://m7p6itvmyomg" path="res://moving_hazard.tscn" id="4_eb41k"]
+[ext_resource type="PackedScene" uid="uid://m7p6itvmyomg" path="res://player/moving_hazard.tscn" id="4_eb41k"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_p7bfj"]
 albedo_color = Color(0.337255, 0.662745, 0.788235, 1)
