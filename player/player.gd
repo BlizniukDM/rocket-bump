@@ -5,7 +5,7 @@ extends RigidBody3D
 
 @export var rotation_speed := 160.0
 
-#Audio
+#Audioф
 @onready var lost: AudioStreamPlayer = $LostAudio
 @onready var won: AudioStreamPlayer = $WonAudio
 @onready var rocket_audio: AudioStreamPlayer3D = $RocketAudio
